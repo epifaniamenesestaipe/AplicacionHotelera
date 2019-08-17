@@ -1,15 +1,22 @@
+<div *ngIf="!user">
+     no puedes ingresar tienes que loguearte
+     <br>
 
-<app-header></app-header>
-<router-outlet></router-outlet>
-<!-- <app-inicio></app-inicio> -->
-<!-- <app-rooms></app-rooms> -->
-<!-- <app-offerts></app-offerts> -->
-<!-- <app-contact></app-contact> -->
-<!-- <app-singin></app-singin> -->
-<header>
-    <h1>mi pagina</h1>
-    <hr />
-    <div>
+     <a routerLink="/login">iniciar sesion</a>
+</div>
+<div *ngIf="user">
+     bienvenido a tu pagina 
+    aquiu puedo entrar solo sui estoy logeado.
+
+    <button  (click)="cerrarSesion">
+        cerrar sesion
+    </button>
+</div>
+
+
+
+
+<!-- <div>
     <div *ngIf="!user">
     <a [routerLink]="['/login']" routerLinkActive="active">iniciar sesion</a>
     </div>
@@ -31,8 +38,4 @@
     <div class="">
     <a [routerLink]="['/admin']" routerLinkActive="active">admin </a>
     </div>
-    </div>
-    </header>
-    <hr />
-<app-footer></app-footer>
-
+    </div> -->

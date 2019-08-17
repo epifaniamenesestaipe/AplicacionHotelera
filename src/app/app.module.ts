@@ -6,7 +6,6 @@ import { SocialLoginModule, AuthServiceConfig } from "angularx-social-login";
 import { GoogleLoginProvider } from "angularx-social-login";
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
@@ -18,6 +17,8 @@ import { SinginComponent } from './pages/singin/singin.component';
 import { RoomsDisponiblesComponent } from './pages/rooms-disponibles/rooms-disponibles.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { LoginComponent } from './login/login/login.component';
+import { AdminComponent } from './admin/admin.component';
+import { AppComponent } from './app.component';
 
 
 const config = new AuthServiceConfig([
@@ -45,7 +46,8 @@ export function provideConfig() {
     SinginComponent,
     RoomsDisponiblesComponent,
     NosotrosComponent,
-    LoginComponent
+    LoginComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

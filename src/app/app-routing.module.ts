@@ -7,6 +7,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { SinginComponent } from './pages/singin/singin.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { LoginComponent } from './login/login/login.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
 {path: 'nosotros' , component:NosotrosComponent},
 {path: 'Contactenos', component:ContactComponent},
 {path: 'Registrarse', component:SinginComponent},
+{path: 'admin', component:AdminComponent},
 {path: '**', pathMatch: 'full', redirectTo: 'inicio'}
 ];
 
