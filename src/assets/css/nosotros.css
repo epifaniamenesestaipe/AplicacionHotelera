@@ -1,0 +1,62 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+ /* nosotros */
+ /* imagen */
+.nosotros {
+    border-right:X;
+
+    background: #2D332F;
+    width: 94%;
+    /* border: 1px solid; */
+    margin-left: 3%; 
+  }
+
+.subnosotros {
+    display: inline-block;
+    padding: 0.50%;
+     width: 48%;
+    /* border-style: solid; */
+
+}
+.nosotros .subnosotros div img{
+    width: 100%;
+    margin-left: 1.5%;    
+}
+/* Mision */
+.valores {
+    margin-left: 3%;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    }
+.valores .mision {
+    width: 96.5%;
+    display: inline-block;
+    vertical-align: top;
+}
+.valores .mision section {
+    background: #fff;
+    padding: 3%; /* espacio*/
+    color: black    ;
+}
+.valores .mision section p {
+    text-align: justify;
+}
+.valores .mision section h3 {
+    text-align: center;
+}
+.mision {
+    width: 96.5%;
+    display: inline-block;
+    border-style: solid;
+    /* font-size: 12pt; */
+    border-color: black;
+}
+.titulo {
+    border-bottom:solid 3px #03353B;
+        width:100%;
+        height:50px;
+        color: #03353B;
+}
+

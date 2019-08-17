@@ -1,0 +1,124 @@
+<!-- calendario -->
+<div class="hod">
+	<div class="banner-info">
+		<div class="container">
+			<div class="details-1">
+				<div class="col-md-10 dropdown-buttons">   
+					<div class="col-md-3 dropdown-button">           			
+						<div class="input-group">
+							<input class="form-control has-dark-background" name="slider-name" id="slider-name" placeholder="Name" type="text" required="">
+						</div>
+					</div>
+					<!---strat-date-piker---->
+						<link rel="stylesheet" href="./assets/css/jquery-ui.css" />
+						<script src="./assets/js/jquery-ui.js"></script>
+						  <script>
+								  $(function() {
+									$( "#datepicker,#datepicker1" ).datepicker();
+								  });
+						  </script>
+					<!---/End-date-piker---->
+
+					<div class="col-md-3 dropdown-button">           			
+						<div class="book_date">
+							<form>
+								<input class="date" id="datepicker" type="text" value="Entrada" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Entrada';}">
+							</form>
+						</div>		
+					</div>
+				  <div class="col-md-3 dropdown-button">           			
+						<div class="book_date">
+							<form>
+								<input class="date1" id="datepicker1" type="text" value="Salida" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Salida';}">
+							</form>
+						</div>		
+					</div>
+					
+					<div class="col-md-3 dropdown-button">
+					  <div class="section_1">
+						 <select id="country" onchange="change_country(this.value)" class="frm-field required">
+							<option value="null">EJECUTIVA</option>
+							<option value="null">MATRIMONIAL</option>         
+							<option value="AX">DOBLE</option>
+							
+						 </select>
+					  </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div> 
+				<div class="col-md-2 submit_button"> 
+					<form action="details.html">
+						<input type="submit" value="Buscar">
+					</form>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- special -->
+<div class="special">
+<div class="container">
+    <div class="spe-info">
+        <p>Comodidad y Seguridad</p>
+        <h3>HOTEL AROMA'S HUANCAYO</h3>
+        <p>Nuestro Hotel en Huancayo cuenta con toda las comodidades para hacer de tu estadía una noche inolvidable.</p>
+    </div>
+</div>
+</div>
+<!-- special -->
+
+<!-- habitacion -->
+<div class="tels">
+    <h1 class="habitacion">NUESTRAS HABITACIONES</h1> <br> <br> <br>
+<div class="container">
+    
+    <div class="col-md-4 tels-left">
+        <h4>Ejecutiva <span>S/. 30</span></h4>
+        <img src="./assets/img/4.jpg" class="img-responsive" alt=""><br>
+        <a class="hvr-shutter-in-horizontal" href="details.html">Reservar</a>
+    </div>
+    <div class="col-md-4 tels-left">
+        <h4>Matrimonial <span>S/. 50</span></h4>
+        <img src="./assets/img/9.jpg" class="img-responsive" alt=""> <br>
+        <a class="hvr-shutter-in-horizontal" href="details.html">Reservar</a>
+    </div>
+    <div class="col-md-4 tels-left">
+        <h4>Doble <span>S/. 70</span></h4>
+        <img src="./assets/img/3.jpg" class="img-responsive" alt=""><br>
+        <a class="hvr-shutter-in-horizontal" href="details.html">Reservar</a>
+    </div>
+    <div class="clearfix"></div>
+</div>
+</div>
+<!-- habitacion -->
+
+<!-- quick -->
+<div class="quick">
+<div class="container">
+    <div class="col-md-4 quick-left">
+        <h3>Servicios</h3>
+        <p>Cable TV</p>
+        <P>WI-FI gratis</P>
+        <P>Agua caliente</P>
+        <p>Baño privado con agua caliente</p>
+            
+    </div>
+    <div class="col-md-4 quick-left">
+        <h3>Novedades</h3>
+        <P>Queremos que estés contento, es por eso que estamos pendientes de tus necesidades.</P>
+        <p>Permítenos a ser complices de tu experencia inolvidable.</p>
+        <input type="submit" value="Ver novedades">
+    </div>
+    <div class="col-md-4 quick-left">
+        <h3>EscrÍbenos</h3>
+            <form>
+                <input type="text" class="textbox" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+                <textarea placeholder="" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Message';}">Mensaje</textarea>
+                <input type="submit" value="Enviar">
+            </form>
+    </div>
+    <div class="clearfix"></div>
+</div>
+</div>
+<!-- quick -->

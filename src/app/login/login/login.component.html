@@ -1,0 +1,26 @@
+<div *ngIf="!logeado">
+    Falta iniciar sesion
+</div>
+<div>
+    Iniciar sesion con google
+</div>
+<hr>
+<button (click)= "accederConGoogle()" class="btn btn-primary">Iniciar sesion</button>
+
+
+<div *ngIf="logeado">
+    Ya inicio sesion
+    <div>
+        <img [src]="usuario.photoUrl" alt="">
+    </div>
+    <br>
+    <div>
+        {{usuario.name}}
+        <br>
+        {{usuario.email}}
+    </div>
+    <br>
+    <button (click)="cerrarSesion()">Salir</button>
+</div>
+
+
